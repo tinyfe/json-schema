@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-quick-start/module",
+  "name": "@tinyfe/json-schema",
   "version": "0.0.1",
   "description": "lerna get package info by path",
   "keywords": [
@@ -28,10 +28,6 @@
   "scripts": {
     "test": "jest --watch"
   },
-  "devDependencies": {
-    "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.25"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -40,7 +36,16 @@
   "bugs": {
     "url": "https://github.com/Rain120/lerna-quick-start/issues"
   },
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/json-schema": "^7.0.7",
+    "@types/node": "^14.14.25",
+    "json-schema": "^0.3.0"
+  },
   "dependencies": {
-    "@tinyfe/color-keywords": "0.0.3"
+    "@tinyfe/regex": "0.0.3",
+    "@tinyfe/type-of": "0.0.2",
+    "lodash.isequal": "^4.5.0",
+    "lodash.uniqwith": "^4.5.0"
   }
 }
