@@ -112,9 +112,8 @@ const result = {
   required: ['name', 'github', 'age', 'work-time', 'wife', 'info'],
 };
 
-describe('module', () => {
+describe('json-schema', () => {
   test('json generator json-schema', () => {
-    const value = generator({ name: 'Rain120' });
     expect(generator({ name: 'Rain120' })).toEqual({
       $schema: 'http://json-schema.org/schema#',
       title: 'Root',
