@@ -1,11 +1,11 @@
-# `template`
+# `@tinyfe/template`
 
 > TODO: description
 
 ## Usage
 
-```
-const template = require('template');
+```js
+import template from '@tinyfe/template';
 
 // TODO: DEMONSTRATE API
 ```

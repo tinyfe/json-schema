@@ -1,12 +1,12 @@
 {
-  "name": "template",
+  "name": "@tinyfe/template",
   "version": "0.0.1",
   "description": "<template>",
   "keywords": [
     "<template>"
   ],
   "author": "Rain120 <1085131904@qq.com>",
-  "homepage": "https://github.com/tinyfe/one-utils#readme",
+  "homepage": "https://github.com/tinyfe/transform#readme",
   "license": "MIT",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinyfe/one-utils.git"
+    "url": "git+https://github.com/tinyfe/transform.git"
   },
   "bugs": {
-    "url": "https://github.com/tinyfe/one-utils/issues"
+    "url": "https://github.com/tinyfe/transform/issues"
   },
   "scripts": {
     "test": "jest --watch"

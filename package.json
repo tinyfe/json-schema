@@ -1,13 +1,21 @@
 {
-  "name": "lerna-quick-start",
-  "version": "1.0.0",
-  "description": "(WIP) lerna quick start",
+  "name": "transform",
+  "version": "0.0.1",
+  "description": "transform",
   "license": "MIT",
   "private": true,
   "author": "Rain120 <1085131904@qq.com>",
   "repository": {
-    "git": "https://github.com/Rain120/lerna-quick-start.git"
+    "git": "https://github.com/tinyfe/transform.git"
   },
+  "keywords": [
+    "json",
+    "schema",
+    "json-schema",
+    "transform",
+    "typescript",
+    "transform-to-ts"
+  ],
   "maintainers": [
     {
       "name": "Rain120",
@@ -65,7 +73,7 @@
     "@rollup/plugin-babel": "^5.2.2",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.1.1",
-    "@rollup/plugin-replace": "^2.3.4",
+    "@rollup/plugin-replace": "^2.4.2",
     "@types/jest": "^26.0.16",
     "@types/node": "^14.14.10",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
