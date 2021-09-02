@@ -1,19 +1,39 @@
+import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Card, Layout, List, PageHeader, Typography } from 'antd';
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from 'styles/common.module.scss';
 
-const { Content, Footer, Header } = Layout;
-const { Text, Title } = Typography;
-
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <Layout className="layout">
+    <div className={styles.container}>
       <Head>
-        <title>Lerna Quick Start</title>
+        <title>Transform</title>
+        <meta name="description" content="Transform" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Content>
-        <Title>Welcome to Here</Title>
-      </Content>
-    </Layout>
+      <main className={styles.main}>
+        <h1 className={styles.title}>
+          Welcome to <span className={styles.highlight}>Transform</span>
+        </h1>
+
+        <p className={styles.description}>Data visualization for transform.</p>
+
+        <div className={styles.grid}>
+          <a href="/transform" className={styles.card}>
+            <h2>Playground &rarr;</h2>
+            <p>Play it.</p>
+          </a>
+
+          <a href="#" className={styles.card}>
+            <h2>Documentation &rarr;</h2>
+            <p>For Developer.</p>
+          </a>
+        </div>
+      </main>
+    </div>
   );
-}
+};
+
+export default Home;

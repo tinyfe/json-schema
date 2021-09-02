@@ -5,6 +5,7 @@
       "import",
       {
         "libraryName": "antd",
+        // 导入js和css模块(LESS/Sass源文件) or css
         "style": true
       }
     ]
