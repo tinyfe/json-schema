@@ -1,0 +1,40 @@
+.editor-container {
+  height: 100%;
+
+  .editor-row {
+    height: 100%;
+
+    .editor-col {
+      height: 100%;
+      overflow: hidden;
+
+      .editor-wrapper {
+        height: 100%;
+        border: 1px solid #ccc;
+        border-right: 0;
+      }
+    }
+  }
+}
+
+.header {
+  padding: 5px 10px !important;
+  border: 1px solid #ccc;
+  border-right: 0;
+  border-left: 0;
+
+  .ant-page-header-heading-extra {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.editor {
+  padding-top: 20px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
