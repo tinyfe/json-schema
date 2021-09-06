@@ -1,9 +1,11 @@
 import React, { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import copy from 'clipboard-copy';
 import { MonacoProps } from './Monaco';
+import { PageHeader, Button, Descriptions } from 'antd';
+import type { PageHeaderProps } from 'antd';
 import styles from 'styles/components.module.scss';
-import { Panel } from './Panel';
 
 export const Monaco = dynamic(() => import('./Monaco'), {
   ssr: false,
@@ -12,12 +14,16 @@ export const Monaco = dynamic(() => import('./Monaco'), {
 export interface EditorProps extends MonacoProps {
   editable?: boolean;
   hasCopy?: boolean;
+  title?: string;
+  extra?: PageHeaderProps['extra'];
 }
 
 export const Editor: FC<EditorProps> = ({
   editable,
   language,
   defaultValue,
+  title,
+  extra,
   onChange,
 }) => {
   const [value, setValue] = useState(defaultValue);
@@ -37,28 +43,22 @@ export const Editor: FC<EditorProps> = ({
 
   return (
     <div className={styles['editor-container']}>
-      <Panel>
-        <Monaco
-          language={language}
-          value={value}
-          options={options}
-          onChange={(value, event) => {
-            setValue(value);
-            onChange!(value, event);
-          }}
-        />
-      </Panel>
-      <Panel>
-        <Monaco
-          language={language}
-          value={value}
-          options={options}
-          onChange={(value, event) => {
-            setValue(value);
-            onChange!(value, event);
-          }}
-        />
-      </Panel>
+      <PageHeader
+        className={styles['header']}
+        ghost={false}
+        title={title}
+        extra={extra}
+      />
+      <Monaco
+        className={styles['editor']}
+        language={language}
+        value={value}
+        options={options}
+        onChange={(value, event) => {
+          setValue(value);
+          onChange!(value, event);
+        }}
+      />
     </div>
   );
 };

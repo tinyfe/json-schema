@@ -14,6 +14,7 @@ export interface MonacoProps extends EditorProps {
 }
 
 const Monaco: React.FC<MonacoProps> = ({
+  className,
   language,
   width,
   height,
@@ -24,6 +25,7 @@ const Monaco: React.FC<MonacoProps> = ({
 }) => {
   return (
     <Editor
+      className={className}
       defaultValue={defaultValue}
       defaultLanguage={language}
       width={width}
