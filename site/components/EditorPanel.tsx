@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import copy from 'clipboard-copy';
@@ -27,6 +27,10 @@ export const Editor: FC<EditorProps> = ({
   onChange,
 }) => {
   const [value, setValue] = useState(defaultValue);
+
+  useEffect(() => {
+    setValue(defaultValue);
+  }, [defaultValue]);
 
   const options = {
     fontSize: 14,
