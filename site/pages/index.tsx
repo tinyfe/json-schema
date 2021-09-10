@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import styles from 'styles/common.module.scss';
 
@@ -21,7 +20,7 @@ const Home: NextPage = () => {
         <p className={styles.description}>Data visualization for transform.</p>
 
         <div className={styles.grid}>
-          <a href="/transform" className={styles.card}>
+          <a href={'/playground/json-to-typescript'} className={styles.card}>
             <h2>Playground &rarr;</h2>
             <p>Play it.</p>
           </a>
