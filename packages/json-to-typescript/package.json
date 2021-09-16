@@ -1,0 +1,45 @@
+{
+  "name": "@tinyfe/json-to-typescript",
+  "version": "0.0.0",
+  "description": "json-to-typescript",
+  "keywords": [
+    "json",
+    "typescript",
+    "json-to-typescript"
+  ],
+  "author": "Rain120 <1085131904@qq.com>",
+  "homepage": "https://github.com/tinyfe/transform#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "browser": "lib/browser.js",
+  "typings": "lib/@types/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinyfe/transform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tinyfe/transform/issues"
+  },
+  "scripts": {
+    "test": "jest --watch",
+    "watch": "tsc -w",
+    "build": "rm -rf lib && tsc"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.25",
+    "typescript": "^4.4.2"
+  },
+  "gitHead": "a3bd6d8f25ebe1ae44763b6887c07296248f2e64"
+}
