@@ -12,6 +12,7 @@ export type ASTTypes = AST['type'];
 export interface AbstractAST {
   keyName?: string;
   standaloneName?: string;
+  isRequired?: boolean;
   type: ASTTypes;
 }
 
